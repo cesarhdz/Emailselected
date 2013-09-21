@@ -1,4 +1,7 @@
-function pasteSelection() {
+function pasteSelection() 
+{
+    $("#errorlog").html("Checking for selected text..");
+    
     //Select current tab to send message
     chrome.tabs.query({
         "active": true,
@@ -32,11 +35,11 @@ function opengmail()
 }
 
 //Adding a handler when message is recieved from content scripts
-chrome.extension.onMessage.addListener(function (response, sender) {
-
+chrome.extension.onMessage.addListener(function (response, sender) 
+{
     //Set text to text area
     var text = document.getElementById('text');
-    if(response.data.length)
+    if(response.data.length > 0)
     {
       $("#errorlog").html("Coppied. Ready to send");
       text.value = response.data;
@@ -46,7 +49,7 @@ chrome.extension.onMessage.addListener(function (response, sender) {
 // Bind On click event to pasteSelection() function
 document.addEventListener("DOMContentLoaded", function () 
 {
-    pasteSelection();          
+    pasteSelection();                                 
     document.getElementById("get").onclick = pasteSelection;
     document.getElementById("send").onclick = opengmail;
 });
