@@ -47,6 +47,6 @@ chrome.extension.onMessage.addListener(function (response, sender) {
 document.addEventListener("DOMContentLoaded", function () 
 {
     pasteSelection();          
-    document.getElementById("get").onclick = opengmail;
+    document.getElementById("get").onclick = pasteSelection;
     document.getElementById("send").onclick = opengmail;
 });
