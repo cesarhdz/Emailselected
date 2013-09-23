@@ -15,4 +15,15 @@ Answer of: Sudarshan
 
 I want to share the code, because while creating the extention i fount a lot posts which similar problem.
 
+How to install:
+1) Download zip;
+2) Unzip it;
+2.1) Edit popup.js, and edit opengmail function;
+2.2) You need to define domain name and file name of sender which get Params of mail;
+3) Go to chrome options->tools->extensions;
+4) Check Developer mode;
+5) Load unpacked extension;
+6) Select unziped folder;
+7) Done.
+
 p.s. i wonder why there still not official extension in app store.
