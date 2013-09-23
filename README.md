@@ -26,4 +26,10 @@ How to install:
 6) Select unziped folder;
 7) Done.
 
+For better userability do keyboard shortcut:
+1) Go to chrome options->tools->extensions;
+2) Scroll down to "Keyboard shortcuts", open it;
+3) Press into a box next to "Email selected text" and press your desired keyboard combination;
+4) Done.
+
 p.s. i wonder why there still not official extension in app store.
